@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find a Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Game Finder</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="center-box">
+    <h2>Let's find you a game!</h2>
+    <form id="gameForm" name="gameForm">
+
+      <div class="form-grid">
+        <div class="form-section">
+          <label for="genre">Genre:</label>
+          <select id="genre" name="genre" required>
+            <option value="">Select a genre</option>
+            <option value="action">Action</option>
+            <option value="rpg">RPG</option>
+            <option value="simulation">Simulation</option>
+          </select>
+
+          <label for="category">Categories:</label>
+          <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="adventure">Adventure</option>
+            <option value="strategy">Strategy</option>
+            <option value="puzzle">Puzzle</option>
+          </select>
+        </div>
+
+        <div class="form-section">
+          <label>Platform:</label>
+          <label><input type="radio" name="platform" value="pc" required> PC</label><br>
+          <label><input type="radio" name="platform" value="playstation"> PlayStation</label><br>
+          <label><input type="radio" name="platform" value="xbox"> Xbox</label>
+        </div>
+
+        <div class="form-section">
+          <label>Format:</label>
+          <label><input type="radio" name="format" value="singleplayer" required> Single Player</label><br>
+          <label><input type="radio" name="format" value="multiplayer"> Multiplayer</label>
+        </div>
+      </div>
+
+      <button type="submit" class="cta-btn">Submit</button>
+      <button type="button" class="cheat-toggle">📋 Show Cheat Sheet</button>
+
+<div class="cheat-sheet" style="display: none;">
+  <h3> cheat-sheet. Hello Professor Sean! Here's a cheat sheet on how you can generate an output. Please note, its made in a way that every time the page is refreshed, it generates new suggestions. </h3>
+  <ul>
+    <li><strong>Elden Ring</strong>: RPG + Adventure + PC + Singleplayer</li>
+    <li><strong>God of War</strong>: Action + Adventure + PlayStation + Singleplayer</li>
+    <li><strong>Red Dead Redemption 2</strong>: RPG + Adventure + Xbox + Singleplayer</li>
+    <li><strong>Spider-Man: Miles Morales</strong>: Action + Adventure + PC + Singleplayer</li>
+    <li><strong>Cyberpunk 2077</strong>: RPG + Adventure + PC + Singleplayer</li>
+    <li><strong>Fortnite</strong>: Action + Strategy + Xbox + Multiplayer</li>
+    <li><strong>GTA Online</strong>: RPG + Adventure + PlayStation + Multiplayer</li>
+    <li><strong>Rocket League</strong>: Simulation + Puzzle + PC + Multiplayer</li>
+  </ul>
+</div>
+
+    </form>
+  </main>
+
+</body>
+</html>
